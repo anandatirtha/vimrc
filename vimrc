@@ -130,6 +130,9 @@ set ai "Auto indent
 "set si "Smart indent
 set wrap "Wrap lines
 
+" Highlight columns exceeding 80
+highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+match OverLength /\%>80v.\+/
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
