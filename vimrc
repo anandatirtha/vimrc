@@ -130,6 +130,10 @@ set ai "Auto indent
 "set si "Smart indent
 set wrap "Wrap lines
 
+set spelllang=en_us
+set spellfile=$HOME/.vim/spell/en.utf-8.add
+set spell
+
 " Highlight columns exceeding 80
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 match OverLength /\%>80v.\+/
@@ -149,6 +153,7 @@ vnoremap <silent> # :call VisualSelection('b')<CR>
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
+map zz zg
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
