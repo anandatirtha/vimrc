@@ -134,6 +134,10 @@ set spelllang=en_us
 set spellfile=$HOME/.vim/spell/en.utf-8.add
 set spell
 
+" Underline bad spelling instead of highlighting for better readability!
+hi clear SpellBad
+hi SpellBad cterm=underline,bold ctermfg=red
+
 " Highlight columns exceeding 80
 highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
 match OverLength /\%>80v.\+/
